@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "evaluacions",
+  "info": {
+    "name": "evaluaciones",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "titulo": {
+      "type": "string"
+    },
+    "descripcion": {
+      "type": "richtext"
+    },
+    "preguntas": {
+      "collection": "pregunta",
+      "via": "evaluacion"
+    },
+    "course": {
+      "model": "courses",
+      "via": "evaluaciones"
+    }
+  }
+}

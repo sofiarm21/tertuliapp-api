@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "preguntas",
+  "info": {
+    "name": "preguntas",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "pregunta": {
+      "type": "string"
+    },
+    "evaluacion": {
+      "via": "preguntas",
+      "model": "evaluacion"
+    }
+  }
+}

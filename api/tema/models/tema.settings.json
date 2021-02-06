@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "courses",
+  "collectionName": "temas",
   "info": {
-    "name": "courses",
+    "name": "Temas",
     "description": ""
   },
   "options": {
@@ -11,13 +11,13 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "name": {
+    "nombre": {
       "type": "string"
     },
-    "description": {
-      "type": "text"
+    "contenido": {
+      "type": "richtext"
     },
-    "image": {
+    "cover": {
       "collection": "file",
       "via": "related",
       "allowedTypes": [
@@ -28,13 +28,12 @@
       "plugin": "upload",
       "required": false
     },
-    "lecciones": {
-      "via": "course",
-      "collection": "lecciones"
+    "orden": {
+      "type": "integer"
     },
-    "evaluaciones": {
-      "via": "course",
-      "collection": "evaluacion"
+    "leccion": {
+      "via": "temas",
+      "model": "lecciones"
     }
   }
 }
