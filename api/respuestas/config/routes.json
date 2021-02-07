@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/respuestas",
+      "handler": "respuestas.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/respuestas/count",
+      "handler": "respuestas.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/respuestas/:id",
+      "handler": "respuestas.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/respuestas",
+      "handler": "respuestas.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/respuestas/:id",
+      "handler": "respuestas.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/respuestas/:id",
+      "handler": "respuestas.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

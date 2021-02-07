@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "preguntas",
+  "collectionName": "respuestas",
   "info": {
-    "name": "preguntas",
+    "name": "Respuestas",
     "description": ""
   },
   "options": {
@@ -11,16 +11,15 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "pregunta": {
+    "mensaje": {
       "type": "string"
     },
-    "evaluacion": {
-      "via": "preguntas",
-      "model": "evaluacion"
+    "valoracion": {
+      "type": "integer"
     },
-    "respuestas": {
-      "via": "pregunta",
-      "collection": "respuestas"
+    "pregunta": {
+      "model": "pregunta",
+      "via": "respuestas"
     }
   }
 }
