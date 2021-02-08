@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "respuestas",
+  "collectionName": "resultados",
   "info": {
-    "name": "Respuestas",
+    "name": "Resultado",
     "description": ""
   },
   "options": {
@@ -11,18 +11,15 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "mensaje": {
-      "type": "string"
-    },
-    "valoracion": {
+    "calificacion": {
       "type": "integer"
     },
-    "pregunta": {
-      "model": "pregunta",
-      "via": "respuestas"
+    "evaluacion_id": {
+      "model": "evaluacion",
+      "via": "resultados"
     },
     "respuestas_resultados": {
-      "via": "respuesta",
+      "via": "resultado",
       "collection": "respuestas-resultados"
     }
   }

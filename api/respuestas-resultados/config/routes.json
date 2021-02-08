@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/respuestas-resultados",
+      "handler": "respuestas-resultados.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/respuestas-resultados/count",
+      "handler": "respuestas-resultados.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/respuestas-resultados/:id",
+      "handler": "respuestas-resultados.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/respuestas-resultados",
+      "handler": "respuestas-resultados.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/respuestas-resultados/:id",
+      "handler": "respuestas-resultados.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/respuestas-resultados/:id",
+      "handler": "respuestas-resultados.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

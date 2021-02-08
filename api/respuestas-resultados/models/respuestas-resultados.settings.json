@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "respuestas_resultados",
+  "info": {
+    "name": "respuestas_resultados",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "respuesta": {
+      "model": "respuestas",
+      "via": "respuestas_resultados"
+    },
+    "resultado": {
+      "model": "resultado",
+      "via": "respuestas_resultados"
+    }
+  }
+}
