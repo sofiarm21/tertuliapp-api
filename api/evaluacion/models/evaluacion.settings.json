@@ -24,6 +24,10 @@
     "course": {
       "model": "courses",
       "via": "evaluaciones"
+    },
+    "resultados": {
+      "via": "evaluacion_id",
+      "collection": "resultado"
     }
   }
 }
