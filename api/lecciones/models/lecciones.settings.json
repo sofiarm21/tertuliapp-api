@@ -38,6 +38,10 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "foros": {
+      "via": "leccion",
+      "collection": "foros"
     }
   }
 }

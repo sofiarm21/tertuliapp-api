@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "entradas",
+  "info": {
+    "name": "Entradas",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "contenido": {
+      "type": "richtext"
+    },
+    "respuesta": {
+      "collection": "entradas",
+      "via": "responde"
+    },
+    "responde": {
+      "model": "entradas",
+      "via": "respuesta"
+    },
+    "foro": {
+      "via": "entradas",
+      "model": "foros"
+    },
+    "usuario": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "entradas"
+    }
+  }
+}

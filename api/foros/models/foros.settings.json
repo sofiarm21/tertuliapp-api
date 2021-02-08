@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "foros",
+  "info": {
+    "name": "Foros",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Titulo": {
+      "type": "string",
+      "required": true
+    },
+    "Descripcion": {
+      "type": "richtext"
+    },
+    "entradas": {
+      "collection": "entradas",
+      "via": "foro"
+    },
+    "leccion": {
+      "model": "lecciones",
+      "via": "foros"
+    }
+  }
+}
