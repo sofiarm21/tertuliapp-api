@@ -116,4 +116,4 @@ build
 ############################
 # Heroku
 ############################
-package-lock.json
+#package-lock.json
